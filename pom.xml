@@ -16,6 +16,33 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 <java.version>1.8</java.version>
 </properties>
 
+
+<dependencies>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.3</version>
+</dependency>
+
+
+<dependency>
+    <groupId>org.jusecase</groupId>
+    <artifactId>jte-maven-compiler-plugin</artifactId>
+    <version>0.6.0</version>
+    <type>maven-plugin</type>
+</dependency>
+
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>3.8.1</version>
+    <scope>test</scope>
+</dependency>
+
+</dependencies>
+
 <build>
     <plugins>
         <plugin>
@@ -37,22 +64,5 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         </plugin>
     </plugins>
 </build>
-<dependencies>
-
-<dependency>
-    <groupId>org.jusecase</groupId>
-    <artifactId>jte-maven-compiler-plugin</artifactId>
-    <version>0.6.0</version>
-    <type>maven-plugin</type>
-</dependency>
-
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>3.8.1</version>
-    <scope>test</scope>
-</dependency>
-
-</dependencies>
 
 </project>
