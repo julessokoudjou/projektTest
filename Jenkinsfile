@@ -5,7 +5,7 @@ pipeline {
         maven 'maven'
     }
      triggers {
-        pollSCM 'H/1 * * * *'
+        pollSCM '* * * * *'
     } 
     
     stages {
