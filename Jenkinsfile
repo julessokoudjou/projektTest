@@ -7,6 +7,15 @@ pipeline {
      triggers {
         pollSCM '* * * * *'
     } 
+
+     stages {
+        stage('checkout') {
+            steps {
+               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/julessokoudjou/projektTest.git']]) 
+
+            }
+        }
+    }
     
     stages {
         stage('build') {
