@@ -19,7 +19,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'node test hat geklapptgkjkjgkjgkjkkj 18:10'
-                sh 'mvn clean install'
+                bat 'mvn clean install'
 
             }
         }
