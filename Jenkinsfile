@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'node test hat geklapptgkjkjgkjgkjkkj'
+                echo 'node test hat geklapptgkjkjgkjgkjkkj 14:50'
 
             }
         }
